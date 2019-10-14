@@ -10,4 +10,3 @@ RUN apk --no-cache -U add python3 && \
 # Patch OpenSSL vulnerability^
 
 ENTRYPOINT [ "python3", "-m", "http.server", "8000" ]
-
