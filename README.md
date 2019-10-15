@@ -1,6 +1,6 @@
 # simple-http-server
 
-I get asked, "how can I serve the files I have locally?" This is often from individuals who will have Docker installed but don't necessarily want to dig into the details of specific python versions or writing a Dockerfile. The goal of this project is to give a single command with no extra dependencies that will serve the directory you point it at. 
+I get asked, "how can I serve the files I have locally?" A ready answer to this is to use Python's [SimpleHTTPServer][1] (now with Python 3, this is [http.server][1]). This is often from individuals who will have Docker installed but don't necessarily want to dig into the details of specific python versions or writing a Dockerfile. The goal of this project is to give a single command with no extra dependencies that will serve the directory you point it at. 
 
 ***WARNING***: DO NOT run this in production. This is purely a convenience tool.
 
@@ -34,10 +34,13 @@ To run this generated image and serve your current directory, run `docker run $(
 
 ## Deployed
 
-This is deployed on Docker Hub using their autobuilds tool: [jdkelley/simple-http-server][2]
+This is deployed on [GitHub Package Registry][2] and [Docker Hub][3].
+
+The source can be found on [GitHub.][4]
 
 [//]: # "LINKS"
 
 [1]: https://docs.python.org/3.7/library/http.server.html#module-http.server     "http.server"
-[2]: https://github.com/jdkelley/dockerfiles/packages "jdkelley/simple-http-server Github Packages"
+[2]: https://github.com/jdkelley/simple-http-server/packages/37410 "jdkelley/simple-http-server GitHub Packages"
 [3]: https://hub.docker.com/r/jdkelley/simple-http-server "jdkelley/simple-http-server on Docker Hub"
+[4]: https://github.com/jdkelley/simple-http-server "jdkelley/simple-http-server on GitHub" 
