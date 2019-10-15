@@ -1,6 +1,6 @@
 # simple-http-server
 
-I get asked, "how can I serve the files I have locally?" A ready answer to this is to use Python's [SimpleHTTPServer][1] (now with Python 3, this is [http.server][1]). This is often from individuals who will have Docker installed but don't necessarily want to dig into the details of specific python versions or writing a Dockerfile. The goal of this project is to give a single command with no extra dependencies that will serve the directory you point it at. 
+I get asked, "how can I serve the files I have locally?" A ready answer to this is to use Python's [SimpleHTTPServer][1] (now with Python 3, this is [http.server][1]). This question, however, is often from individuals who will have Docker installed but don't necessarily want to dig into the details of specific python versions or writing a Dockerfile. The goal of this project is to give a single command with no extra dependencies that will serve the directory you point it at. 
 
 ***WARNING***: DO NOT run this in production. This is purely a convenience tool.
 
