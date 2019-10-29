@@ -35,7 +35,7 @@ simple-http-server() {
 }
 ```
 
-And then use it with `simple-http-server`. You can find an example of the function I use in [example/bash_functions.sh][profile_example]. 
+And then use it with `simple-http-server`. You can find an example of the function I use in [example/bash_functions.sh][5]. 
 
 ## Building from source
 
