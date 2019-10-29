@@ -24,6 +24,19 @@ docker run --rm \
     jdkelley/simple-http-server:latest
 ```
 
+I find it useful to add a bash function to my profile to avoid typing that all out:
+
+```sh
+simple-http-server() {
+    docker run --rm \
+        -v $(pwd):/serve \
+        -p 80:8000 \
+        jdkelley/simple-http-server:latest
+}
+```
+
+And then use it with `simple-http-server`. You can find an example of the function I use in [example/bash_functions.sh][profile_example]. 
+
 ## Building from source
 
 ```sh
@@ -44,3 +57,4 @@ The source can be found on [GitHub.][4]
 [2]: https://github.com/jdkelley/simple-http-server/packages/37410 "jdkelley/simple-http-server GitHub Packages"
 [3]: https://hub.docker.com/r/jdkelley/simple-http-server "jdkelley/simple-http-server on Docker Hub"
 [4]: https://github.com/jdkelley/simple-http-server "jdkelley/simple-http-server on GitHub" 
+[5]: example/bash_functions.sh "Example bash function to push in profile"
